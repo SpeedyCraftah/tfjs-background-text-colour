@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>ML Colour Picker</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <style>
+            p {
+                font-size: 1.8em;
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+    </head>
+    <h1>Colour Picker</h1>
+
+    <div id="target" style="display: flex; justify-content: center; align-items: center;  height: 11em; background-color: red;">
+        <p id="text">Hello, World!</p>
+    </div>
+
+    <input disabled id="picker" style="margin-top: 9px;" type="color" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="script.js" defer></script>
+</html>
