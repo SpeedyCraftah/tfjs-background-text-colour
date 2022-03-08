@@ -71,7 +71,7 @@ document.getElementById("picker").addEventListener("change", async event => {
     console.log("Colour:", { r, g, b });
     document.getElementById("target").style.backgroundColor = event.target.value;
 
-    const predicted = (await model.predict(tf.tensor2d([[r / 255, g / 255, b / 255]]))).data()[0];
+    const predicted = (await model.predict(tf.tensor2d([[r / 255, g / 255, b / 255]])).data())[0];
     console.log("Network predicted:", predicted);
 
     document.getElementById("text").style.color = Math.round(predicted) > 0.5 ? 'white' : 'black';
