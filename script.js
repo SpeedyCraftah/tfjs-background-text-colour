@@ -66,7 +66,7 @@ model.compile({
     document.getElementById("picker").disabled = false;
 })();
 
-document.getElementById("picker").addEventListener("change", async event => {
+document.getElementById("picker").addEventListener("input", async event => {
     const [r, g, b] = hexToRgb(event.target.value);
     console.log("Colour:", { r, g, b });
     document.getElementById("target").style.backgroundColor = event.target.value;
